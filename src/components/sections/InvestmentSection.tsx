@@ -12,7 +12,7 @@ export const InvestmentSection = () => (
         <div className="bg-card border-2 border-primary/30 rounded-2xl p-10 mt-8">
           <p className="text-muted-foreground text-sm mb-2">em até</p>
           <p className="text-4xl md:text-5xl font-black text-foreground mb-1">
-            R$ 1.997 <span className="text-lg font-medium text-muted-foreground">em 12x</span>
+            12x R$ 197,00
           </p>
           <p className="text-muted-foreground text-sm mb-1">ou</p>
           <p className="text-2xl font-bold text-highlight mb-8">R$ 1.697 à vista</p>
