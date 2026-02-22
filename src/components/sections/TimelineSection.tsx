@@ -8,7 +8,7 @@ const weeks = [
 ];
 
 export const TimelineSection = () => (
-  <section className="py-24 md:py-32 px-6 bg-secondary/30">
+  <section id="como-funciona" className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
     <div className="max-w-4xl mx-auto">
       <FadeIn>
         <h2 className="text-3xl md:text-5xl font-black mb-16 text-center">
