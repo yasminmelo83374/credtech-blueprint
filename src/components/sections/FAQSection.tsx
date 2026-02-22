@@ -7,7 +7,7 @@ const faqs = [
   { q: "Vocês executam por mim?", a: "A CredTech te entrega modelos prontos e estrutura. A execução diária é de sua responsabilidade com o acompanhamento diário do nosso time e da Yasmin Melo." },
   { q: "É só sobre WhatsApp e disparo?", a: "Não. O foco é arquitetura comercial: multicanal, validação, automação e inteligência de retorno. Qualquer bônus de WhatsApp é extra, não promessa central." },
   { q: "Por que só 15 vagas?", a: "Porque envolve setup e implementação prática em grupo fechado. Mais do que isso derruba qualidade." },
-  { q: "Quais são as datas?", a: "Inscrições até 02/03/26. Início 03/03/26. Duração: 45 dias." },
+  { q: "Quais são as datas?", a: "Inscrições até 02/03/26. Início 03/03/26 às 19:29. Duração: 45 dias com encontros semanais (toda terça-feira) e acompanhamento no grupo diariamente com a Yasmin Melo." },
 ];
 
 export const FAQSection = () => (
