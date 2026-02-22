@@ -11,7 +11,7 @@ const features = [
 ];
 
 export const WhatIsSection = () => (
-  <section className="py-24 md:py-32 px-6 bg-secondary/30">
+  <section id="o-que-e" className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
     <div className="max-w-5xl mx-auto">
       <FadeIn>
         <h2 className="text-3xl md:text-5xl font-black mb-4">

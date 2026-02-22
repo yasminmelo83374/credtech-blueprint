@@ -2,7 +2,7 @@ import { FadeIn } from "../FadeIn";
 import { CountdownTimer } from "../CountdownTimer";
 
 export const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center justify-center grid-bg overflow-hidden">
+  <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center grid-bg overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background/80" />
     <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-32">
       <FadeIn>

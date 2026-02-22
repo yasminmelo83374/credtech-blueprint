@@ -1,7 +1,7 @@
 import { FadeIn } from "../FadeIn";
 
 export const InvestmentSection = () => (
-  <section id="investimento" className="py-24 md:py-32 px-6 bg-secondary/30">
+  <section id="investimento" className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
     <div className="max-w-xl mx-auto text-center">
       <FadeIn>
         <span className="text-primary text-sm font-bold uppercase tracking-wider">Investimento</span>

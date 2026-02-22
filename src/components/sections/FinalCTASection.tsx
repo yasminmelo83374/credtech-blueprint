@@ -1,7 +1,7 @@
 import { FadeIn } from "../FadeIn";
 
 export const FinalCTASection = () => (
-  <section className="py-32 md:py-40 px-6 text-center grid-bg relative">
+  <section className="py-20 md:py-32 px-4 md:px-6 text-center grid-bg relative">
     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
     <div className="relative z-10 max-w-3xl mx-auto">
       <FadeIn>
