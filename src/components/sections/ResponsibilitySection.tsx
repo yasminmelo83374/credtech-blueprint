@@ -3,7 +3,7 @@ import { FadeIn } from "../FadeIn";
 const duties = [
   "Executar as missões",
   "Aplicar o que for estruturado",
-  "Disponibilizar mailing",
+  "Fornecer os Resultados",
   "Participar dos encontros",
   "Implementar as ferramentas",
 ];
