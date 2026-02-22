@@ -1,14 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/sections/HeroSection";
+import { ProblemSection } from "@/components/sections/ProblemSection";
+import { WhatIsSection } from "@/components/sections/WhatIsSection";
+import { ForWhoSection } from "@/components/sections/ForWhoSection";
+import { TimelineSection } from "@/components/sections/TimelineSection";
+import { ProofsSection } from "@/components/sections/ProofsSection";
+import { InvestmentSection } from "@/components/sections/InvestmentSection";
+import { ResponsibilitySection } from "@/components/sections/ResponsibilitySection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <main className="bg-background text-foreground overflow-x-hidden">
+    <HeroSection />
+    <ProblemSection />
+    <WhatIsSection />
+    <ForWhoSection />
+    <TimelineSection />
+    <ProofsSection />
+    <InvestmentSection />
+    <ResponsibilitySection />
+    <FinalCTASection />
+  </main>
+);
 
 export default Index;
