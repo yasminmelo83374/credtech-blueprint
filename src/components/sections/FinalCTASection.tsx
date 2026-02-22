@@ -14,7 +14,7 @@ export const FinalCTASection = () => (
       </FadeIn>
       <FadeIn delay={0.2}>
         <a href="#investimento" className="inline-block bg-primary text-primary-foreground font-bold text-xl px-14 py-5 rounded-full glow-button mb-4">
-          Quero minha CredTech
+          Quero estar entre os 15
         </a>
         <p className="text-muted-foreground text-sm">
           Vagas encerram 02/03 às 23:59.
