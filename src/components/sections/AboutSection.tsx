@@ -21,8 +21,11 @@ export const AboutSection = () => (
         {/* Left — Yas */}
         <FadeIn delay={0.1}>
           <div className="bg-card border border-border rounded-2xl p-6 md:p-8 flex flex-col items-center text-center">
-            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-              <img src={yasminImg} alt="Yasmin Melo" className="w-full h-full object-cover object-top" />
+            <div className="relative w-32 h-32 mb-4">
+              <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl scale-110" />
+              <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                <img src={yasminImg} alt="Yasmin Melo" className="w-full h-full object-cover object-top" />
+              </div>
             </div>
             <h3 className="text-lg font-bold text-foreground mb-1">Yasmin Melo</h3>
             <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-4">Estratégia + Estrutura Comercial</p>
