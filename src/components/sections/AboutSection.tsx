@@ -24,7 +24,7 @@ export const AboutSection = () => (
             <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
               <img src={yasminImg} alt="Yasmin Melo" className="w-full h-full object-cover object-top" />
             </div>
-            <h3 className="text-lg font-bold text-foreground mb-1">Yasmin</h3>
+            <h3 className="text-lg font-bold text-foreground mb-1">Yasmin Melo</h3>
             <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-4">Estratégia + Estrutura Comercial</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Atuo na interseção entre crédito, tecnologia e inteligência aplicada. Meu foco aqui não é te ensinar a "vender mais". É te ajudar a construir uma operação que sustenta produção com método, processo e leitura de dados.
