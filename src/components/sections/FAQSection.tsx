@@ -2,12 +2,12 @@ import { FadeIn } from "../FadeIn";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Preciso ser bom em tecnologia?", a: "Não. Você precisa conseguir executar ações básicas no computador com orientação (instalar, abrir links, copiar/colar e usar Drive). O resto é estruturado com você." },
+  { q: "Preciso ser bom em tecnologia?", a: "Não. Basta executar ações básicas no computador com orientação. O resto é estruturado com você." },
   { q: "Isso é curso?", a: "Não. É implementação em grupo com missões, estrutura mínima e ajustes guiados." },
-  { q: "Vocês executam por mim?", a: "A CredTech te entrega modelos prontos e estrutura. A execução diária é de sua responsabilidade com o acompanhamento diário do nosso time e da Yasmin Melo." },
-  { q: "É só sobre WhatsApp e disparo?", a: "Não. O foco é arquitetura comercial: multicanal, validação, automação e inteligência de retorno. Qualquer bônus de WhatsApp é extra, não promessa central." },
+  { q: "Vocês executam por mim?", a: "A CredTech entrega modelos prontos e estrutura. A execução diária é sua, com acompanhamento do time e da Yasmin Melo." },
+  { q: "É só sobre WhatsApp?", a: "Não. O foco é arquitetura comercial: multicanal, validação, automação e inteligência de retorno." },
   { q: "Por que só 15 vagas?", a: "Porque envolve setup e implementação prática em grupo fechado. Mais do que isso derruba qualidade." },
-  { q: "Quais são as datas?", a: "Inscrições até 02/03/26. Início 03/03/26 às 19:29. Duração: 45 dias com encontros semanais (toda terça-feira) e acompanhamento no grupo diariamente com a Yasmin Melo." },
+  { q: "Quais são as datas?", a: "Inscrições até 02/03/26. Início 03/03/26 às 19:29. Duração: 45 dias com encontros toda terça-feira." },
 ];
 
 export const FAQSection = () => (

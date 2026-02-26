@@ -6,10 +6,10 @@ export const FinalCTASection = () => (
     <div className="relative z-10 max-w-3xl mx-auto">
       <FadeIn>
         <h2 className="text-4xl md:text-6xl font-black mb-4">
-          Produção não é <span className="text-highlight">sorte</span>.
+          Estrutura ou <span className="text-highlight">improviso</span>?
         </h2>
         <p className="text-xl md:text-2xl text-muted-foreground mb-10">
-          É decisão estrutural.
+          A decisão é sua.
         </p>
       </FadeIn>
       <FadeIn delay={0.2}>

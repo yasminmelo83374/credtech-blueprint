@@ -5,43 +5,30 @@ const steps = [
     number: "01",
     title: "Anamnese Estratégica (15 min com Yasmin Melo)",
     content: [
-      "Você terá uma reunião individual com a Yah.",
-      "Rápida. Objetiva. Direta ao ponto.",
-      "Ela vai entender:",
+      "Reunião individual. Rápida. Direta ao ponto.",
+      "Ela vai entender sua operação, gargalos, produto e objetivo real.",
     ],
-    bullets: [
-      "Como sua operação funciona hoje",
-      "Onde está o gargalo",
-      "Qual produto você trabalha",
-      "Seu nível de estrutura",
-      "Seu objetivo real",
-    ],
+    bullets: [],
     footer: "Isso acontece antes da primeira aula.",
   },
   {
     number: "02",
     title: "Encontros Fechados — 6 semanas",
     content: [
-      "Toda terça-feira às 19:29. Pontualmente.",
-      "Serão 6 encontros ao vivo, fechados para 15 mentorados.",
-      "Na primeira aula você vai entender:",
+      "Toda terça-feira às 19:29. 6 encontros ao vivo para 15 mentorados.",
     ],
     bullets: [
-      "A base da Arquitetura CredTech",
-      "O que você está fazendo errado sem perceber",
-      "O plano de ação das próximas semanas",
-      "As primeiras tarefas práticas",
+      "Base da Arquitetura CredTech",
+      "O que você está fazendo errado",
+      "Plano de ação + primeiras tarefas",
     ],
-    footer: "Nada é solto. Tudo é sequência.",
+    footer: "Tudo é sequência.",
   },
   {
     number: "03",
     title: "Execução com Liberação por Entrega",
     content: [
-      "Você terá tarefas claras.",
-      "O próximo módulo só é liberado quando você entregar o anterior.",
-      "Os encontros continuam mesmo que você não entregue.",
-      "Mas a evolução prática depende da sua execução.",
+      "Tarefas claras. Próximo módulo só libera quando entregar o anterior.",
     ],
     bullets: [],
     footer: "Aqui é estrutura. Não motivação.",
@@ -50,67 +37,50 @@ const steps = [
     number: "04",
     title: "Grupo Fechado + Suporte Real",
     content: [
-      "O grupo ficará aberto durante todo o processo.",
+      "Grupo aberto durante todo o processo com suporte da Yah.",
     ],
     bullets: [
       "Regras claras",
-      "Participação ativa da Yah",
-      "Suporte durante a semana para dúvidas e travamentos",
+      "Participação ativa",
+      "Suporte para dúvidas e travamentos",
     ],
     footer: "Você não vai ficar perdido.",
   },
 ];
 
 const buildItems = [
-  "Entender profundamente o funcionamento da IA aplicada à sua operação",
-  "Construir seu assistente particular de IA",
-  "Definir o convênio estratégico do grupo",
-  "Treinar o produto escolhido",
-  "Aplicar a estratégia de captação (Hidra de Lerna) — orgânico e pago",
-  "Analisar resultados semana a semana",
-  "Ajustar rota com base em dados",
+  "Assistente particular de IA",
+  "Convênio estratégico do grupo",
+  "Treinamento do produto escolhido",
+  "Captação multicanal (Hidra de Lerna)",
+  "Análise de resultados semanal",
+  "Ajuste de rota com base em dados",
 ];
 
 const bonusItems = [
-  "Mailings estratégicos já filtrados",
-  "Acesso a Agentes de IA exclusivos",
-  "Prompts prontos para criação de agentes",
-  "Testes de automações inteligentes via WhatsApp",
+  "Mailings estratégicos filtrados",
+  "Agentes de IA exclusivos",
+  "Prompts prontos para agentes",
+  "Automações inteligentes via WhatsApp",
 ];
 
 export const HowItWorksSection = () => (
   <section id="como-funciona-operacao" className="py-16 md:py-24 px-4 md:px-6 bg-secondary/20">
     <div className="max-w-4xl mx-auto">
-      {/* Header */}
       <FadeIn>
         <p className="text-primary text-sm font-bold uppercase tracking-widest mb-3">
-          Como Funciona na Prática
+          Como Funciona
         </p>
         <h2 className="text-3xl md:text-5xl font-black mb-3">
-          Execução estruturada em <span className="text-highlight">6 semanas</span>.
+          Execução em <span className="text-highlight">6 semanas</span>.
         </h2>
         <p className="text-muted-foreground text-base md:text-lg max-w-2xl">
-          Sem teoria solta. Sem motivação vazia. Estrutura aplicada.
+          Estrutura aplicada. Sem teoria solta.
         </p>
-      </FadeIn>
-
-      {/* Video Placeholder */}
-      <FadeIn delay={0.1}>
-        <div className="mt-12 mb-16">
-          <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg shadow-primary/5">
-            <div className="aspect-video flex flex-col items-center justify-center gap-3 text-muted-foreground">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary/60">
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-              <p className="text-sm font-medium">Entenda o Método CredTech</p>
-              <p className="text-xs text-muted-foreground/60">Espaço reservado para vídeo explicativo</p>
-            </div>
-          </div>
-        </div>
       </FadeIn>
 
       {/* Steps */}
-      <div className="relative">
+      <div className="relative mt-12">
         <div className="absolute left-[19px] md:left-[23px] top-0 bottom-0 w-px bg-border" />
 
         {steps.map((step, i) => (
@@ -120,16 +90,16 @@ export const HowItWorksSection = () => (
                 <span className="text-primary text-xs md:text-sm font-black">{step.number}</span>
               </div>
 
-              <h3 className="text-lg md:text-xl font-bold text-foreground mb-3">{step.title}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">{step.title}</h3>
 
-              <div className="space-y-1.5">
+              <div className="space-y-1">
                 {step.content.map((line, j) => (
                   <p key={j} className="text-muted-foreground text-sm leading-relaxed">{line}</p>
                 ))}
               </div>
 
               {step.bullets.length > 0 && (
-                <div className="mt-3 space-y-1">
+                <div className="mt-2 space-y-1">
                   {step.bullets.map((b, j) => (
                     <p key={j} className="text-muted-foreground text-sm pl-4 border-l-2 border-primary/20">
                       {b}
@@ -138,19 +108,19 @@ export const HowItWorksSection = () => (
                 </div>
               )}
 
-              <p className="text-foreground font-semibold text-sm mt-4">{step.footer}</p>
+              <p className="text-foreground font-semibold text-sm mt-3">{step.footer}</p>
             </div>
           </FadeIn>
         ))}
       </div>
 
-      {/* O que vamos construir juntos */}
+      {/* O que vamos construir */}
       <FadeIn delay={0.15}>
-        <div className="mt-16 bg-card border border-border rounded-2xl p-6 md:p-8">
-          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-            O que vamos construir <span className="text-highlight">juntos</span>
+        <div className="mt-14 bg-card border border-border rounded-2xl p-6 md:p-8">
+          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-5">
+            O que construímos <span className="text-highlight">juntos</span>
           </h3>
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             {buildItems.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
@@ -158,16 +128,16 @@ export const HowItWorksSection = () => (
               </div>
             ))}
           </div>
-          <p className="text-foreground font-bold text-base mt-8">
-            Você não vai sair com ideias. Vai sair com <span className="text-highlight">estrutura funcionando</span>.
+          <p className="text-foreground font-bold text-base mt-6">
+            Você sai com <span className="text-highlight">estrutura funcionando</span>.
           </p>
         </div>
       </FadeIn>
 
       {/* Bônus */}
       <FadeIn delay={0.2}>
-        <div className="mt-8 bg-card border border-border rounded-2xl p-6 md:p-8">
-          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
+        <div className="mt-6 bg-card border border-border rounded-2xl p-6 md:p-8">
+          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-5">
             Bônus <span className="text-highlight">Estratégicos</span>
           </h3>
           <div className="grid sm:grid-cols-2 gap-3">
