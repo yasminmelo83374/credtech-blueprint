@@ -1,6 +1,8 @@
 import { FadeIn } from "../FadeIn";
 import { CountdownTimer } from "../CountdownTimer";
 
+const WA_URL = "https://wa.me/55SEUNUMERO?text=Quero%20passar%20pela%20pr%C3%A9-valida%C3%A7%C3%A3o%20da%20Opera%C3%A7%C3%A3o%20CredTech.%20Meu%20produto%20principal%20%C3%A9%20____%20e%20meu%20objetivo%20em%2045%20dias%20%C3%A9%20____.";
+
 export const HeroSection = () => (
   <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center grid-bg overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background/80" />
@@ -17,39 +19,31 @@ export const HeroSection = () => (
       </FadeIn>
       <FadeIn delay={0.3}>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
-          Implementação de Estrutura Autônoma com IA, Multicanal e Inteligência Comercial para Correspondentes.
+          Implementação guiada em 6 semanas + anamnese individual de 15 min.
         </p>
       </FadeIn>
 
-      {/* Video embed — appears before CTA on mobile (natural flow) */}
       <FadeIn delay={0.4}>
-        <div className="max-w-2xl mx-auto mb-8">
-          <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg shadow-primary/5">
-            <div className="aspect-video flex flex-col items-center justify-center gap-3 text-muted-foreground">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary/60">
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-              <p className="text-sm font-medium">Entenda o Método CredTech</p>
-              <p className="text-xs text-muted-foreground/60">Espaço reservado para vídeo</p>
-            </div>
-          </div>
+        <a
+          href={WA_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-full glow-button mb-4"
+        >
+          Quero passar pela pré-validação
+        </a>
+        <div className="text-muted-foreground text-sm mb-2">
+          <p>15 vagas reais. Inscrições até 02/03 às 23:59.</p>
         </div>
+        <a href="#como-funciona-operacao" className="inline-block text-primary text-sm font-medium hover:underline mb-8">
+          Ver o método em 2 min ↓
+        </a>
       </FadeIn>
 
       <FadeIn delay={0.5}>
-        <a href="#investimento" className="inline-block bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-full glow-button mb-6">
-          Quero ter uma CredTech
-        </a>
-        <div className="text-muted-foreground text-sm mb-8">
-          <p>Início: <span className="text-foreground font-semibold">03/03/26</span></p>
-          <p>15 vagas reais. Sem reposição.</p>
-        </div>
-      </FadeIn>
-      <FadeIn delay={0.6}>
         <div className="flex justify-center">
           <CountdownTimer />
         </div>
-        <p className="text-muted-foreground text-xs mt-3">Inscrições encerram 02/03 às 23:59</p>
       </FadeIn>
     </div>
   </section>
