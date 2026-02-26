@@ -1,15 +1,14 @@
 import { FadeIn } from "../FadeIn";
 
 const duties = [
-  "Executar as missões",
+  "Executar as missões semanais",
+  "Participar dos encontros ao vivo",
   "Aplicar o que for estruturado",
-  "Fornecer os Resultados",
-  "Participar dos encontros",
-  "Implementar as ferramentas",
+  "Fornecer os resultados para análise",
 ];
 
 export const ResponsibilitySection = () => (
-  <section className="py-16 md:py-24 px-4 md:px-6">
+  <section className="py-14 md:py-24 px-4 md:px-6">
     <div className="max-w-3xl mx-auto">
       <FadeIn>
         <h2 className="text-3xl md:text-5xl font-black leading-tight mb-4">
@@ -18,15 +17,12 @@ export const ResponsibilitySection = () => (
         </h2>
       </FadeIn>
       <FadeIn delay={0.15}>
-        <p className="text-muted-foreground text-lg mb-8">
-          Quem entra assume o papel de <span className="text-foreground font-semibold">Operador Estrutural</span>.
-        </p>
-        <div className="space-y-3">
+        <div className="space-y-3 mt-6">
           {duties.map((d, i) => (
-            <p key={i} className="text-muted-foreground text-sm border-l-2 border-primary/30 pl-4">• {d}</p>
+            <p key={i} className="text-muted-foreground text-sm md:text-base border-l-2 border-primary/30 pl-4 leading-relaxed">• {d}</p>
           ))}
         </div>
-        <p className="text-foreground font-bold text-lg mt-8">
+        <p className="text-foreground font-bold text-base md:text-lg mt-8">
           Sem execução, não há resultado.
         </p>
       </FadeIn>

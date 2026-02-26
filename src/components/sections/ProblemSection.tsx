@@ -1,41 +1,35 @@
 import { FadeIn } from "../FadeIn";
 
 const problems = [
-  "Dependência de um único produto.",
-  "Disparo sem estratégia.",
-  "Banimentos recorrentes.",
-  "Mailing sem validação.",
-  "Sem inteligência de dados.",
-  "Sem previsibilidade.",
+  "Banimentos recorrentes por disparo sem cadência.",
+  "Mailing sem validação = desperdício de tempo e dinheiro.",
+  "Operação no escuro, sem leitura de retorno.",
+  "Dependência de um único produto ou convênio.",
+  "Imprevisibilidade total na produção mensal.",
 ];
 
 export const ProblemSection = () => (
-  <section id="o-problema" className="py-16 md:py-24 px-4 md:px-6">
+  <section id="o-problema" className="py-14 md:py-24 px-4 md:px-6">
     <div className="max-w-3xl mx-auto">
       <FadeIn>
-        <h2 className="text-3xl md:text-5xl font-black leading-tight mb-12">
+        <h2 className="text-3xl md:text-5xl font-black leading-tight mb-10">
           O mercado <span className="text-highlight">mudou</span>.<br />
           A maioria continua operando como em 2018.
         </h2>
       </FadeIn>
       <FadeIn delay={0.15}>
-        <div className="space-y-3 mb-12">
+        <div className="space-y-3 mb-10">
           {problems.map((p, i) => (
-            <p key={i} className="text-muted-foreground text-lg border-l-2 border-border pl-4">
+            <p key={i} className="text-muted-foreground text-base md:text-lg border-l-2 border-border pl-4 leading-relaxed">
               {p}
             </p>
           ))}
         </div>
       </FadeIn>
       <FadeIn delay={0.3}>
-        <div className="border-t border-border pt-8">
-          <p className="text-lg text-muted-foreground">
-            Negócio frágil depende de <span className="text-foreground font-semibold">produto</span>.
-          </p>
-          <p className="text-lg text-foreground font-bold">
-            Negócio forte depende de <span className="text-highlight">estrutura</span>.
-          </p>
-        </div>
+        <p className="text-foreground font-bold text-lg md:text-xl">
+          Você não precisa de mais volume. Precisa de <span className="text-highlight">arquitetura</span>.
+        </p>
       </FadeIn>
     </div>
   </section>
