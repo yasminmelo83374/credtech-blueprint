@@ -14,6 +14,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ResponsibilitySection } from "@/components/sections/ResponsibilitySection";
 import { ApplicationSection } from "@/components/sections/ApplicationSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { FooterSection } from "@/components/sections/FooterSection";
 
 const Index = () => (
   <main className="bg-background text-foreground overflow-x-hidden">
@@ -33,6 +34,7 @@ const Index = () => (
     <ResponsibilitySection />
     <ApplicationSection />
     <FinalCTASection />
+    <FooterSection />
   </main>
 );
 
