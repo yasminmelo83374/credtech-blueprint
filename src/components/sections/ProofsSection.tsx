@@ -16,7 +16,7 @@ export const ProofsSection = () => {
         <FadeIn>
           <span className="text-primary text-xs font-bold uppercase tracking-widest">Resultados estruturais reais</span>
           <h2 className="text-2xl md:text-4xl font-extrabold mb-3 mt-2">
-            Provas <span className="text-highlight">reais</span> (prints)
+            Resultados <span className="text-highlight">Reais</span>
           </h2>
           <p className="text-muted-foreground text-sm mb-10 max-w-xl leading-relaxed">
             Resultados variam conforme execução, base e convênio. Aqui a promessa é estrutura e previsibilidade — não milagre.
