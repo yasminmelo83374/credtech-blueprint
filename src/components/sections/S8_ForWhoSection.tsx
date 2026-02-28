@@ -1,38 +1,32 @@
 import { FadeIn } from "../FadeIn";
-import { ArrowRight } from "lucide-react";
 
-const forWho = [
-  "está cansado de meses bons e ruins",
-  "quer parar de viver de tentativa e erro",
-  "quer automatizar mas não sabe como",
-  "quer vender todo santo dia",
-  "quer crescer sem depender de vendedor",
-  "quer deixar de ser manual",
-  "quer entrar na era da previsibilidade",
+const testimonials = [
+  "Parei de depender de vendedor e minha operação ficou previsível pela primeira vez.",
+  "Eu achava que IA era complicado. Em 3 dias já tinha agente rodando sozinho.",
+  "Fiz mais em 1 semana com o método do que em 3 meses no manual.",
+  "Finalmente entendi por que meu WhatsApp vivia banido.",
 ];
 
 export const S8_ForWhoSection = () => (
   <section className="py-16 md:py-28 px-5 md:px-6">
     <div className="max-w-3xl mx-auto">
       <FadeIn>
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-3">
-          Para quem <span className="text-highlight">é</span>
-        </h2>
-        <p className="text-foreground font-bold text-base md:text-lg mb-8">
-          O Operação CredTech é para você que:
-        </p>
+        <span className="text-primary text-xs font-bold uppercase tracking-[0.25em] mb-3 block text-center">
+          Depoimentos
+        </span>
       </FadeIn>
 
-      <FadeIn delay={0.1}>
-        <div className="space-y-3">
-          {forWho.map((item, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <ArrowRight className="w-4 h-4 text-primary shrink-0" />
-              <p className="text-foreground text-sm md:text-base">• {item}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+        {testimonials.map((t, i) => (
+          <FadeIn key={i} delay={i * 0.1}>
+            <div className="bg-card border border-border rounded-xl p-6">
+              <p className="text-foreground text-sm md:text-base leading-relaxed italic">
+                "{t}"
+              </p>
             </div>
-          ))}
-        </div>
-      </FadeIn>
+          </FadeIn>
+        ))}
+      </div>
     </div>
   </section>
 );
