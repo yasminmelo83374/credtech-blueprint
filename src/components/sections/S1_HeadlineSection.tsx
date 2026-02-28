@@ -3,13 +3,13 @@ import { CountdownTimer } from "../CountdownTimer";
 
 const WA_URL = "https://wa.me/55SEUNUMERO?text=Quero%20passar%20pela%20pr%C3%A9-valida%C3%A7%C3%A3o%20da%20Opera%C3%A7%C3%A3o%20CredTech.%20Meu%20produto%20principal%20%C3%A9%20____%20e%20meu%20objetivo%20em%2045%20dias%20%C3%A9%20____.";
 
-export const S1_HeadlineSection = () => (
-  <section className="relative min-h-screen flex items-center justify-center grid-bg overflow-hidden">
+export const S1_HeadlineSection = () =>
+<section className="relative min-h-screen flex items-center justify-center grid-bg overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
     <div className="relative z-10 max-w-3xl mx-auto px-5 text-center py-24 md:py-32">
       <FadeIn>
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-8">
-          Vender todo santo dia — sem esforço manual — com uma operação automatizada por <span className="text-highlight">IA</span>.
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-8">Vender todo santo dia. Sem esforço manual. Com uma operação automatizada por IA.
+        <span className="text-highlight">IA</span>.
         </h1>
       </FadeIn>
 
@@ -30,18 +30,18 @@ export const S1_HeadlineSection = () => (
           </p>
           <div className="space-y-2.5">
             {[
-              "um mês entra dinheiro…",
-              "no outro, some…",
-              "cliente some…",
-              "vendedor desanima…",
-              "operação trava…",
-              "demandas caem…",
-              "e você fica sempre no modo reação.",
-            ].map((item, i) => (
-              <p key={i} className="text-muted-foreground text-sm md:text-base border-l-2 border-primary/30 pl-4">
+          "um mês entra dinheiro…",
+          "no outro, some…",
+          "cliente some…",
+          "vendedor desanima…",
+          "operação trava…",
+          "demandas caem…",
+          "e você fica sempre no modo reação."].
+          map((item, i) =>
+          <p key={i} className="text-muted-foreground text-sm md:text-base border-l-2 border-primary/30 pl-4">
                 • {item}
               </p>
-            ))}
+          )}
           </div>
         </div>
       </FadeIn>
@@ -74,11 +74,11 @@ export const S1_HeadlineSection = () => (
 
       <FadeIn delay={0.5}>
         <a
-          href={WA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-primary text-primary-foreground font-bold text-base md:text-lg px-10 py-4 rounded-full glow-button mb-6"
-        >
+        href={WA_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-primary text-primary-foreground font-bold text-base md:text-lg px-10 py-4 rounded-full glow-button mb-6">
+
           Quero passar pela pré-validação
         </a>
         <div className="flex justify-center mt-4">
@@ -86,5 +86,4 @@ export const S1_HeadlineSection = () => (
         </div>
       </FadeIn>
     </div>
-  </section>
-);
+  </section>;
