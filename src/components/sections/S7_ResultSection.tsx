@@ -1,47 +1,23 @@
 import { FadeIn } from "../FadeIn";
-import { Check } from "lucide-react";
 
-const results = [
-  "Demanda chegando todos os dias",
-  "IA operando o trabalho pesado",
-  "Estrutura que não depende de humor ou motivação",
-  "Processo previsível",
-  "Gargalos eliminados",
-  "Vendas acontecendo sem esforço manual",
-  "Operação rodando mesmo quando você dorme",
-  "Crescimento contínuo",
-  "E uma vantagem definitiva no mercado",
-];
+const CTA_URL = "#assistir";
 
 export const S7_ResultSection = () => (
-  <section className="py-16 md:py-28 px-5 md:px-6 bg-secondary/30">
-    <div className="max-w-3xl mx-auto">
+  <section className="py-20 md:py-32 px-5 md:px-6 grid-bg relative overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+    <div className="relative z-10 max-w-3xl mx-auto text-center">
       <FadeIn>
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-3">
-          O resultado <span className="text-highlight">final</span>
-        </h2>
-        <p className="text-foreground font-bold text-base md:text-lg mb-8">
-          No fim dessa jornada você terá:
-        </p>
+        <a
+          href={CTA_URL}
+          className="inline-block bg-primary text-primary-foreground font-bold text-base md:text-lg px-10 py-4 rounded-full glow-button"
+        >
+          Garantir Meu Acesso Antes de Sair do Ar
+        </a>
       </FadeIn>
 
-      <FadeIn delay={0.1}>
-        <div className="grid sm:grid-cols-2 gap-3 mb-8">
-          {results.map((r, i) => (
-            <div
-              key={i}
-              className="bg-card border border-border rounded-xl px-4 py-3.5 flex items-start gap-3 hover:border-primary/30 transition-colors"
-            >
-              <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-              <p className="text-foreground text-sm md:text-base">{r}</p>
-            </div>
-          ))}
-        </div>
-      </FadeIn>
-
-      <FadeIn delay={0.2}>
-        <p className="text-muted-foreground text-sm md:text-base text-center">
-          Tudo isso usando IA de forma simples, prática e guiada.
+      <FadeIn delay={0.15}>
+        <p className="text-muted-foreground text-sm mt-6">
+          Conteúdo gratuito por tempo limitado.
         </p>
       </FadeIn>
     </div>

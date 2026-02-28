@@ -5,8 +5,6 @@ import { S4_OpportunitySection } from "@/components/sections/S4_OpportunitySecti
 import { S5_MethodSection } from "@/components/sections/S5_MethodSection";
 import { S6_PhasesSection } from "@/components/sections/S6_PhasesSection";
 import { S7_ResultSection } from "@/components/sections/S7_ResultSection";
-import { S8_ForWhoSection } from "@/components/sections/S8_ForWhoSection";
-import { S9_FinalCTASection } from "@/components/sections/S9_FinalCTASection";
 import { SalesFooter } from "@/components/sections/SalesFooter";
 
 const Index = () => (
@@ -18,8 +16,6 @@ const Index = () => (
     <S5_MethodSection />
     <S6_PhasesSection />
     <S7_ResultSection />
-    <S8_ForWhoSection />
-    <S9_FinalCTASection />
     <SalesFooter />
   </main>
 );
