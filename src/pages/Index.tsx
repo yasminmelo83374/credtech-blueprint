@@ -1,34 +1,26 @@
-import { HeroSection } from "@/components/sections/HeroSection";
-import { ProblemSection } from "@/components/sections/ProblemSection";
-import { WhyArchitectureSection } from "@/components/sections/WhyArchitectureSection";
-import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
-import { WhatIsSection } from "@/components/sections/WhatIsSection";
-import { ForWhoSection } from "@/components/sections/ForWhoSection";
-import { ProofsSection } from "@/components/sections/ProofsSection";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { PreValidationSection } from "@/components/sections/PreValidationSection";
-import { InvestmentSection } from "@/components/sections/InvestmentSection";
-import { FAQSection } from "@/components/sections/FAQSection";
-import { ResponsibilitySection } from "@/components/sections/ResponsibilitySection";
-import { FinalCTASection } from "@/components/sections/FinalCTASection";
-import { FooterSection } from "@/components/sections/FooterSection";
+import { S1_HeadlineSection } from "@/components/sections/S1_HeadlineSection";
+import { S2_ConsciousnessSection } from "@/components/sections/S2_ConsciousnessSection";
+import { S3_ProblemSection } from "@/components/sections/S3_ProblemSection";
+import { S4_OpportunitySection } from "@/components/sections/S4_OpportunitySection";
+import { S5_MethodSection } from "@/components/sections/S5_MethodSection";
+import { S6_PhasesSection } from "@/components/sections/S6_PhasesSection";
+import { S7_ResultSection } from "@/components/sections/S7_ResultSection";
+import { S8_ForWhoSection } from "@/components/sections/S8_ForWhoSection";
+import { S9_FinalCTASection } from "@/components/sections/S9_FinalCTASection";
+import { SalesFooter } from "@/components/sections/SalesFooter";
 
 const Index = () => (
   <main className="bg-background text-foreground overflow-x-hidden">
-    <HeroSection />
-    <ProblemSection />
-    <WhyArchitectureSection />
-    <HowItWorksSection />
-    <WhatIsSection />
-    <ForWhoSection />
-    <ProofsSection />
-    <AboutSection />
-    <PreValidationSection />
-    <InvestmentSection />
-    <FAQSection />
-    <ResponsibilitySection />
-    <FinalCTASection />
-    <FooterSection />
+    <S1_HeadlineSection />
+    <S2_ConsciousnessSection />
+    <S3_ProblemSection />
+    <S4_OpportunitySection />
+    <S5_MethodSection />
+    <S6_PhasesSection />
+    <S7_ResultSection />
+    <S8_ForWhoSection />
+    <S9_FinalCTASection />
+    <SalesFooter />
   </main>
 );
 
