@@ -1,25 +1,36 @@
 import { FadeIn } from "../FadeIn";
 
+const items = [
+  "cansada de mailing ruim",
+  "saturada do manual",
+  "travada nos mesmos resultados",
+  "insegura com a IA",
+  "sobrecarregada, mas sem crescer",
+  "querendo previsibilidade",
+];
+
 export const S5_MethodSection = () => (
   <section className="py-16 md:py-28 px-5 md:px-6 bg-secondary/30">
-    <div className="max-w-3xl mx-auto text-center">
+    <div className="max-w-3xl mx-auto">
       <FadeIn>
-        <span className="text-primary text-xs font-bold uppercase tracking-widest">O Método</span>
-        <h2 className="text-3xl md:text-5xl font-black mt-3 mb-6">
-          Operação <span className="text-highlight">CredTech</span>
+        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-10">
+          Se você sente que está fazendo de tudo… e mesmo assim{" "}
+          <span className="text-highlight">nada muda</span>, esta série é para
+          você.
         </h2>
       </FadeIn>
 
       <FadeIn delay={0.1}>
-        <p className="text-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-          O método que transforma sua operação de crédito em um sistema previsível, automatizado e alimentado por IA — sem precisar ser técnico, programador ou "entendido de tecnologia".
-        </p>
-      </FadeIn>
-
-      <FadeIn delay={0.2}>
-        <p className="text-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-          Ele foi desenhado para tirar você do modo manual e colocar no <span className="text-highlight font-semibold">modo algorítmico</span>, passando por 5 fases claras, replicáveis e inevitavelmente lucrativas.
-        </p>
+        <div className="space-y-2.5">
+          {items.map((item, i) => (
+            <p
+              key={i}
+              className="text-muted-foreground text-sm md:text-base border-l-2 border-primary/30 pl-4"
+            >
+              • {item}
+            </p>
+          ))}
+        </div>
       </FadeIn>
     </div>
   </section>
