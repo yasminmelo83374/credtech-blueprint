@@ -1,37 +1,27 @@
 import { FadeIn } from "../FadeIn";
-import { ChevronRight } from "lucide-react";
-
-const bullets = [
-  "Por que suas vendas caíram mesmo você trabalhando mais",
-  "O motivo real do WhatsApp banir",
-  "Como a IA decide quem sobrevive no crédito",
-  "A estrutura exata para vender todo dia",
-  "O modelo CredTech (e por que ele é a única saída lógica)",
-];
 
 export const S4_OpportunitySection = () => (
   <section className="py-16 md:py-28 px-5 md:px-6">
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-2xl mx-auto text-center">
       <FadeIn>
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-10">
-          Você vai ver o que{" "}
-          <span className="text-highlight">ninguém no mercado</span> está
-          explicando.
+        <span className="text-primary text-xs font-bold uppercase tracking-[0.25em] mb-3 block">
+          Urgência
+        </span>
+        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-6">
+          Disponível por <span className="text-highlight">tempo limitado</span>
         </h2>
       </FadeIn>
 
-      <FadeIn delay={0.1}>
-        <div className="space-y-3">
-          {bullets.map((b, i) => (
-            <div
-              key={i}
-              className="flex items-start gap-3 text-foreground text-sm md:text-base"
-            >
-              <ChevronRight className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-              <span>{b}</span>
-            </div>
-          ))}
-        </div>
+      <FadeIn delay={0.15}>
+        <p className="text-foreground/90 text-sm md:text-base leading-relaxed mb-4 max-w-xl mx-auto">
+          Os episódios saem do ar assim que a nova turma do Método CredTech abrir. Depois disso, o conteúdo será removido.
+        </p>
+      </FadeIn>
+
+      <FadeIn delay={0.25}>
+        <p className="text-muted-foreground text-sm">
+          O mercado não espera. A IA não espera. E o crédito também não.
+        </p>
       </FadeIn>
     </div>
   </section>
