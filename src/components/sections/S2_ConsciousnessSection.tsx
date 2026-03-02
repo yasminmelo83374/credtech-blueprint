@@ -1,10 +1,17 @@
 import { FadeIn } from "../FadeIn";
+import depoimento1 from "@/assets/depoimento-1.png";
+import depoimento2 from "@/assets/depoimento-2.png";
+import depoimento3a from "@/assets/depoimento-3a.png";
+import depoimento3b from "@/assets/depoimento-3b.png";
 
-const quotes = [
-  "Voltei a ter clientes todos os dias.",
-  "Nunca mais fui banida.",
-  "Até meu mailing fraco começou a converter.",
-];
+const TestimonialFrame = ({ children }: { children: React.ReactNode }) => (
+  <div className="relative rounded-xl overflow-hidden" style={{
+    boxShadow: "0 0 20px hsl(75 100% 47% / 0.15), 0 0 40px hsl(75 100% 47% / 0.05)",
+    border: "1px solid hsl(75 100% 47% / 0.2)",
+  }}>
+    {children}
+  </div>
+);
 
 export const S2_ConsciousnessSection = () => (
   <section className="py-16 md:py-28 px-5 md:px-6">
@@ -23,20 +30,27 @@ export const S2_ConsciousnessSection = () => (
       </FadeIn>
 
       <FadeIn delay={0.15}>
-        <div className="space-y-4 mb-8">
-          {quotes.map((q, i) => (
-            <div
-              key={i}
-              className="corner-bracket bg-card border border-border rounded-xl px-6 py-4 text-foreground text-sm md:text-base font-medium"
-            >
-              "{q}"
-            </div>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <TestimonialFrame>
+            <img src={depoimento1} alt="Depoimento de aluna" className="w-full rounded-xl" loading="lazy" />
+          </TestimonialFrame>
+          <TestimonialFrame>
+            <img src={depoimento2} alt="Depoimento de aluna" className="w-full rounded-xl" loading="lazy" />
+          </TestimonialFrame>
         </div>
       </FadeIn>
 
-      <FadeIn delay={0.25}>
-        <div className="glow-line w-12 mx-auto mb-4" />
+      <FadeIn delay={0.2}>
+        <TestimonialFrame>
+          <div className="grid grid-cols-2 gap-0">
+            <img src={depoimento3a} alt="Depoimento parte 1" className="w-full" loading="lazy" />
+            <img src={depoimento3b} alt="Depoimento parte 2" className="w-full" loading="lazy" />
+          </div>
+        </TestimonialFrame>
+      </FadeIn>
+
+      <FadeIn delay={0.3}>
+        <div className="glow-line w-12 mx-auto mb-4 mt-8" />
         <p className="text-muted-foreground/60 text-xs">
           Isso é o que acontece quando você sai do improviso e opera no novo modelo.
         </p>
