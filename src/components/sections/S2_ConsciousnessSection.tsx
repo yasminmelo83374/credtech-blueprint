@@ -14,23 +14,23 @@ const TestimonialFrame = ({ children }: { children: React.ReactNode }) => (
 );
 
 export const S2_ConsciousnessSection = () => (
-  <section className="py-16 md:py-28 px-5 md:px-6">
+  <section className="py-12 md:py-28 px-5 md:px-6">
     <div className="max-w-2xl mx-auto text-center">
       <FadeIn>
-        <div className="flex items-center justify-center gap-2 mb-3">
+        <div className="flex items-center justify-center gap-2 mb-2">
           <div className="pulse-dot" />
-          <span className="text-primary text-xs font-bold uppercase tracking-[0.25em]">
+          <span className="text-primary text-[10px] md:text-xs font-bold uppercase tracking-[0.25em]">
             Prova social
           </span>
         </div>
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-10">
+        <h2 className="text-xl md:text-4xl font-extrabold leading-tight mb-6 md:mb-10">
           O que já está acontecendo com quem aplicou a{" "}
           <span className="text-highlight">estrutura:</span>
         </h2>
       </FadeIn>
 
       <FadeIn delay={0.15}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-3 md:mb-4">
           <TestimonialFrame>
             <img src={depoimento1} alt="Depoimento de aluna" className="w-full rounded-xl" loading="lazy" />
           </TestimonialFrame>
@@ -50,8 +50,8 @@ export const S2_ConsciousnessSection = () => (
       </FadeIn>
 
       <FadeIn delay={0.3}>
-        <div className="glow-line w-12 mx-auto mb-4 mt-8" />
-        <p className="text-muted-foreground/60 text-xs">
+        <div className="glow-line w-12 mx-auto mb-3 mt-6 md:mt-8" />
+        <p className="text-muted-foreground/60 text-[11px] md:text-xs">
           Isso é o que acontece quando você sai do improviso e opera no novo modelo.
         </p>
       </FadeIn>

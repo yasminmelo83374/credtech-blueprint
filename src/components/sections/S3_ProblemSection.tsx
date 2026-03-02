@@ -13,18 +13,18 @@ const bullets = [
 ];
 
 export const S3_ProblemSection = () => (
-  <section className="py-16 md:py-28 px-5 md:px-6 bg-secondary/30 relative overflow-hidden">
+  <section className="py-12 md:py-28 px-5 md:px-6 bg-secondary/30 relative overflow-hidden">
     <div className="absolute top-0 left-0 right-0 glow-line" />
     <div className="max-w-2xl mx-auto">
       <FadeIn>
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-10 text-center">
+        <h2 className="text-xl md:text-4xl font-extrabold leading-tight mb-6 md:mb-10 text-center">
           O que você vai aprender nos episódios do{" "}
           <span className="text-highlight">método:</span>
         </h2>
       </FadeIn>
 
       <FadeIn delay={0.1}>
-        <div className="space-y-3 mb-12">
+        <div className="space-y-2.5 md:space-y-3 mb-8 md:mb-12">
           {bullets.map((b, i) => (
             <motion.div
               key={i}
@@ -34,8 +34,8 @@ export const S3_ProblemSection = () => (
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
-              <span className="pulse-dot mt-2 flex-shrink-0" />
-              <p className="text-foreground/90 text-sm md:text-base leading-relaxed">{b}</p>
+              <span className="pulse-dot mt-1.5 flex-shrink-0" />
+              <p className="text-foreground/90 text-[13px] md:text-base leading-relaxed">{b}</p>
             </motion.div>
           ))}
         </div>
@@ -45,7 +45,7 @@ export const S3_ProblemSection = () => (
         <div className="text-center">
           <a
             href={CTA_URL}
-            className="inline-block bg-primary text-primary-foreground font-bold text-base px-10 py-4 rounded-full glow-button"
+            className="inline-block bg-primary text-primary-foreground font-bold text-sm md:text-base px-8 md:px-10 py-3.5 md:py-4 rounded-full glow-button"
           >
             Liberar meu acesso
           </a>

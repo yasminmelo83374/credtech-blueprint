@@ -3,10 +3,10 @@ import { ReactNode } from "react";
 
 export const FadeIn = ({ children, delay = 0, className = "" }: { children: ReactNode; delay?: number; className?: string }) => (
   <motion.div
-    initial={{ opacity: 0, y: 30 }}
+    initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-50px" }}
-    transition={{ duration: 0.7, delay, ease: "easeOut" }}
+    viewport={{ once: true, margin: "-30px" }}
+    transition={{ duration: 0.5, delay, ease: "easeOut" }}
     className={className}
   >
     {children}

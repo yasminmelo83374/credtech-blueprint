@@ -28,10 +28,10 @@ export const RDFormSection = () => {
   }, []);
 
   return (
-    <section id="assistir" className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
+    <section id="assistir" className="py-12 md:py-24 px-4 md:px-6 bg-secondary/30">
       <div className="max-w-xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-2xl md:text-4xl font-extrabold leading-tight mb-8">
+          <h2 className="text-xl md:text-4xl font-extrabold leading-tight mb-5 md:mb-8">
             Garanta seu acesso <span className="text-highlight">agora</span>
           </h2>
         </FadeIn>
