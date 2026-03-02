@@ -20,7 +20,7 @@ const Particles = () => (
 );
 
 export const S7_ResultSection = () => (
-  <section className="py-14 md:py-32 px-5 md:px-6 grid-bg scan-lines relative overflow-hidden">
+  <section className="py-8 md:py-32 px-5 md:px-6 grid-bg scan-lines relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
     <Particles />
     <div className="relative z-10 max-w-3xl mx-auto text-center">

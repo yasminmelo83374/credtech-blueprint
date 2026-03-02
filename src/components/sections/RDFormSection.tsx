@@ -28,17 +28,21 @@ export const RDFormSection = () => {
   }, []);
 
   return (
-    <section id="assistir" className="py-12 md:py-24 px-4 md:px-6 bg-secondary/30">
-      <div className="max-w-xl mx-auto text-center">
+    <section id="assistir" className="py-8 md:py-24 px-3 md:px-6 bg-secondary/30">
+      <div className="max-w-md md:max-w-xl mx-auto text-center">
         <FadeIn>
-          <h2 className="text-xl md:text-4xl font-extrabold leading-tight mb-5 md:mb-8">
+          <h2 className="text-lg md:text-4xl font-extrabold leading-tight mb-3 md:mb-8">
             Garanta seu acesso <span className="text-highlight">agora</span>
           </h2>
+          <p className="text-muted-foreground text-xs md:text-sm mb-4 md:mb-6">
+            Preencha abaixo e receba o acesso imediato aos episódios.
+          </p>
         </FadeIn>
         <FadeIn delay={0.15}>
           <div
             role="main"
             id="formulario_captacao-credtech-4bd37597749ec244cdc0"
+            className="[&_input]:!text-base [&_input]:!py-3 [&_button]:!text-base [&_button]:!py-3"
           />
         </FadeIn>
       </div>

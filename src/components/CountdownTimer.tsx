@@ -31,12 +31,7 @@ export const CountdownTimer = ({ variant = "default" }: { variant?: "default" | 
   const isSticky = variant === "sticky";
 
   return (
-    <div className={`flex ${isSticky ? "gap-2" : "gap-3"} items-center`}>
-      {isSticky && (
-        <span className="text-foreground/80 text-[10px] sm:text-xs font-medium mr-1 hidden sm:inline">
-          Sai do ar em:
-        </span>
-      )}
+    <div className={`flex ${isSticky ? "gap-1.5 sm:gap-2" : "gap-3"} items-center`}>
       {blocks.map((b, i) => (
         <div key={i} className="flex flex-col items-center">
           <AnimatePresence mode="popLayout">
@@ -46,16 +41,16 @@ export const CountdownTimer = ({ variant = "default" }: { variant?: "default" | 
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 8, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className={`bg-primary text-primary-foreground font-bold rounded-lg flex items-center justify-center ${
+              className={`font-bold rounded-md flex items-center justify-center ${
                 isSticky
-                  ? "text-sm w-9 h-9 sm:text-base sm:w-10 sm:h-10"
-                  : "text-xl md:text-2xl w-14 h-14"
+                  ? "bg-white/20 text-white text-xs w-7 h-7 sm:text-sm sm:w-9 sm:h-9"
+                  : "bg-primary text-primary-foreground text-xl md:text-2xl w-14 h-14"
               }`}
             >
               {String(b.value).padStart(2, "0")}
             </motion.span>
           </AnimatePresence>
-          <span className={`text-muted-foreground mt-1 ${isSticky ? "text-[9px] sm:text-[10px]" : "text-xs"}`}>
+          <span className={`mt-0.5 ${isSticky ? "text-white/70 text-[8px] sm:text-[10px]" : "text-muted-foreground text-xs mt-1"}`}>
             {b.label}
           </span>
         </div>

@@ -14,7 +14,7 @@ const TestimonialFrame = ({ children }: { children: React.ReactNode }) => (
 );
 
 export const S2_ConsciousnessSection = () => (
-  <section className="py-12 md:py-28 px-5 md:px-6">
+  <section className="py-8 md:py-28 px-5 md:px-6">
     <div className="max-w-2xl mx-auto text-center">
       <FadeIn>
         <div className="flex items-center justify-center gap-2 mb-2">

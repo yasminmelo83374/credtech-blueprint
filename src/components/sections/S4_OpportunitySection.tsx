@@ -2,7 +2,7 @@ import { FadeIn } from "../FadeIn";
 import { motion } from "framer-motion";
 
 export const S4_OpportunitySection = () => (
-  <section className="py-12 md:py-28 px-5 md:px-6 relative">
+  <section className="py-8 md:py-28 px-5 md:px-6 relative">
     <div className="max-w-2xl mx-auto text-center">
       <FadeIn>
         <motion.span

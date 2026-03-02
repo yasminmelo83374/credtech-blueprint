@@ -9,7 +9,7 @@ const authorityBullets = [
 ];
 
 export const S6_PhasesSection = () => (
-  <section className="py-12 md:py-28 px-5 md:px-6">
+  <section className="py-8 md:py-28 px-5 md:px-6">
     <div className="max-w-2xl mx-auto">
       <FadeIn>
         <h2 className="text-xl md:text-4xl font-extrabold leading-tight mb-6 md:mb-10 text-center">
