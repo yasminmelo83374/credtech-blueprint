@@ -7,7 +7,6 @@ import { S5_MethodSection } from "@/components/sections/S5_MethodSection";
 import { S6_PhasesSection } from "@/components/sections/S6_PhasesSection";
 import { S7_ResultSection } from "@/components/sections/S7_ResultSection";
 import { RDFormSection } from "@/components/sections/RDFormSection";
-import { InvestmentSection } from "@/components/sections/InvestmentSection";
 import { SalesFooter } from "@/components/sections/SalesFooter";
 
 const Index = () => (
@@ -22,7 +21,6 @@ const Index = () => (
       <S6_PhasesSection />
       <S7_ResultSection />
       <RDFormSection />
-      <InvestmentSection />
       <SalesFooter />
     </div>
   </main>

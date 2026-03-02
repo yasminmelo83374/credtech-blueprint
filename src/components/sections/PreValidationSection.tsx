@@ -1,7 +1,7 @@
 import { FadeIn } from "../FadeIn";
 import { MessageCircle, UserCheck, Users } from "lucide-react";
 
-const WA_URL = "https://wa.me/5519993171855?text=Quero%20passar%20pela%20pr%C3%A9-valida%C3%A7%C3%A3o%20da%20Opera%C3%A7%C3%A3o%20CredTech.%20Meu%20produto%20principal%20%C3%A9%20____%20e%20meu%20objetivo%20em%2045%20dias%20%C3%A9%20____.";
+const WA_URL = "https://wa.me/55SEUNUMERO?text=Quero%20passar%20pela%20pr%C3%A9-valida%C3%A7%C3%A3o%20da%20Opera%C3%A7%C3%A3o%20CredTech.%20Meu%20produto%20principal%20%C3%A9%20____%20e%20meu%20objetivo%20em%2045%20dias%20%C3%A9%20____.";
 
 const flowSteps = [
   { icon: MessageCircle, label: "Você chama no WhatsApp" },
