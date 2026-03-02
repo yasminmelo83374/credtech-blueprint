@@ -20,10 +20,10 @@ const Particles = () => (
 );
 
 export const S1_HeadlineSection = () => (
-  <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center grid-bg scan-lines overflow-hidden">
+  <section className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center grid-bg scan-lines overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
     <Particles />
-    <div className="relative z-10 max-w-3xl mx-auto px-5 text-center py-16 md:py-32">
+    <div className="relative z-10 max-w-3xl mx-auto px-5 text-center py-10 md:py-32">
       <FadeIn>
         <motion.div
           className="glow-line w-16 md:w-24 mx-auto mb-5 md:mb-8"
