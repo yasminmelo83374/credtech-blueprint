@@ -158,6 +158,70 @@
     right: -1px;
     border-width: 0 1px 1px 0;
   }
+
+
+  /* RD Station form mobile optimization */
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 {
+    width: 100%;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input[type="text"],
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input[type="email"],
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input[type="tel"],
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input[type="number"],
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 select,
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+    padding: 12px 14px !important;
+    border-radius: 8px !important;
+    border: 1px solid hsl(0 0% 25%) !important;
+    background: hsl(0 0% 10%) !important;
+    color: hsl(0 0% 100%) !important;
+    -webkit-appearance: none !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input::placeholder {
+    color: hsl(0 0% 50%) !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 label {
+    color: hsl(0 0% 80%) !important;
+    font-size: 13px !important;
+    margin-bottom: 4px !important;
+    display: block !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 button[type="submit"],
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 input[type="submit"] {
+    width: 100% !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 14px 20px !important;
+    border-radius: 9999px !important;
+    background: hsl(75 100% 47%) !important;
+    color: hsl(0 0% 4.3%) !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin-top: 8px !important;
+    -webkit-appearance: none !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 .bricks-form__fieldset,
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 .bricks-form__field {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  #formulario_captacao-credtech-4bd37597749ec244cdc0 iframe {
+    max-width: 100% !important;
+  }
 }
 
 @keyframes glow-sweep {
