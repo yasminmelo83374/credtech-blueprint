@@ -13,7 +13,7 @@ const bullets = [
 ];
 
 export const S3_ProblemSection = () => (
-  <section id="assistir" className="py-16 md:py-28 px-5 md:px-6 bg-secondary/30 relative overflow-hidden">
+  <section className="py-16 md:py-28 px-5 md:px-6 bg-secondary/30 relative overflow-hidden">
     <div className="absolute top-0 left-0 right-0 glow-line" />
     <div className="max-w-2xl mx-auto">
       <FadeIn>
