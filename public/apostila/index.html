@@ -130,6 +130,110 @@
     .challenge-response textarea::placeholder {
       color: rgba(235, 235, 235, 0.42);
     }
+
+    .premium-guide {
+      margin-top: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.025);
+      padding: 20px;
+    }
+
+    .premium-guide-intro {
+      margin: 0 0 16px;
+      color: rgba(244, 244, 244, 0.74);
+      font: 400 14px/1.7 ui-sans-serif, system-ui, sans-serif;
+    }
+
+    .premium-platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .premium-platform {
+      border: 1px solid rgba(214, 255, 63, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+      color: rgba(244, 244, 244, 0.82);
+      padding: 10px 16px;
+      cursor: pointer;
+      font: 700 10px/1.2 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .premium-platform.is-active {
+      background: rgba(214, 255, 63, 0.1);
+      color: #d6ff3f;
+      border-color: rgba(214, 255, 63, 0.24);
+    }
+
+    .premium-panel {
+      display: none;
+      gap: 14px;
+    }
+
+    .premium-panel.is-active {
+      display: grid;
+    }
+
+    .premium-card {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      background: rgba(0, 0, 0, 0.22);
+      padding: 16px;
+    }
+
+    .premium-card h4 {
+      margin: 0 0 8px;
+      color: #d6ff3f;
+      font: 700 12px/1.4 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .premium-card p {
+      margin: 0 0 12px;
+      color: rgba(244, 244, 244, 0.7);
+      font: 400 14px/1.7 ui-sans-serif, system-ui, sans-serif;
+    }
+
+    .premium-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .premium-steps {
+      margin: 0;
+      padding-left: 18px;
+      color: #f4f4f4;
+      font: 400 14px/1.75 ui-sans-serif, system-ui, sans-serif;
+    }
+
+    .premium-steps li + li {
+      margin-top: 6px;
+    }
+
+    .premium-check {
+      border-left: 3px solid rgba(214, 255, 63, 0.48);
+    }
+
+    .premium-warning {
+      border-left: 3px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .premium-prompt {
+      display: block;
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      color: #f4f4f4;
+      white-space: pre-wrap;
+      font: 400 13px/1.65 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
   </style>
   <script type="module" crossorigin src="/apostila/assets/index-BEPISsfz.js"></script>
   <link rel="stylesheet" crossorigin href="/apostila/assets/index-D9p_uYGl.css">
@@ -154,6 +258,209 @@
     <div id="root"></div>
     <script>
       (function() {
+        const premiumContent = {
+          mac: {
+            title: "Mac",
+            intro: "Escolha abaixo o caminho certo para o aluno seguir no Mac. O foco e simples: abrir no Codex exatamente a pasta que contem o arquivo AGENTS.md.",
+            blocks: [
+              {
+                title: "Caso 1: usar so o Superagente",
+                description: "Use este caminho quando o aluno quiser trabalhar apenas com a pasta que recebeu, sem misturar com outro projeto.",
+                steps: [
+                  "Va ate a sua Mesa.",
+                  "Encontre a pasta Superagente-para-Alunos.",
+                  "Abra o aplicativo Codex.",
+                  "Na parte de cima da tela, clique em Abrir.",
+                  "Vai aparecer uma janela para escolher uma pasta.",
+                  "Nessa janela, clique em Mesa.",
+                  "Clique na pasta Superagente-para-Alunos.",
+                  "Clique em Abrir.",
+                  "Pronto. Agora o Codex esta trabalhando dentro dessa pasta."
+                ]
+              },
+              {
+                title: "Caso 2: usar o Superagente dentro do seu proprio projeto",
+                description: "Use este caminho quando o aluno ja tiver uma pasta dele, como Meu Site, Meu App ou Projeto da Aula.",
+                steps: [
+                  "Va ate a pasta Superagente-para-Alunos.",
+                  "Abra essa pasta.",
+                  "Selecione os arquivos que estao dentro dela.",
+                  "Copie esses arquivos.",
+                  "Va ate a pasta principal do seu projeto.",
+                  "Cole esses arquivos dentro da pasta do seu projeto.",
+                  "Confirme que o arquivo AGENTS.md agora esta dentro da pasta do projeto.",
+                  "Abra o Codex.",
+                  "Clique em Abrir.",
+                  "Escolha a pasta do seu projeto.",
+                  "Clique em Abrir.",
+                  "Pronto. Agora o Codex vai funcionar com o Superagente dentro do seu projeto."
+                ]
+              },
+              {
+                title: "Como saber se esta certo no Mac",
+                description: "Assim que a pasta abrir no Codex, peca para o aluno fazer este teste simples.",
+                steps: [
+                  "Crie um chat novo.",
+                  "Envie a mensagem abaixo exatamente como esta.",
+                  "Se deu certo, o Codex vai responder de forma mais guiada, mais clara e mais organizada."
+                ],
+                prompt: "Leia o arquivo AGENTS.md deste projeto e assuma esse comportamento como seu padrao. Primeiro, me explique em linguagem simples o que voce entendeu sobre sua forma de atuar.",
+                variant: "check"
+              }
+            ]
+          },
+          windows: {
+            title: "Windows",
+            intro: "Escolha abaixo o caminho certo para o aluno seguir no Windows. A regra continua a mesma: a pasta aberta no Codex precisa conter o arquivo AGENTS.md.",
+            blocks: [
+              {
+                title: "Caso 1: usar so o Superagente",
+                description: "Use este caminho quando o aluno quiser abrir apenas a pasta recebida, sem colocar dentro de outro projeto.",
+                steps: [
+                  "Va para a Area de Trabalho.",
+                  "Encontre a pasta Superagente-para-Alunos.",
+                  "Abra o aplicativo Codex.",
+                  "Clique em Abrir ou Open.",
+                  "Vai aparecer uma janela para escolher uma pasta.",
+                  "Nessa janela, va ate a Area de Trabalho.",
+                  "Clique na pasta Superagente-para-Alunos.",
+                  "Clique em Open, Abrir ou Selecionar pasta.",
+                  "Pronto. Agora o Codex esta trabalhando dentro dessa pasta."
+                ]
+              },
+              {
+                title: "Caso 2: usar o Superagente dentro do seu proprio projeto",
+                description: "Use este caminho quando o aluno ja tiver uma pasta dele, como Meu Site, Meu App ou Projeto da Aula.",
+                steps: [
+                  "Va ate a pasta Superagente-para-Alunos.",
+                  "Abra essa pasta.",
+                  "Selecione os arquivos que estao dentro dela.",
+                  "Copie esses arquivos.",
+                  "Va ate a pasta principal do seu projeto.",
+                  "Cole esses arquivos dentro da pasta do seu projeto.",
+                  "Confirme que o arquivo AGENTS.md esta dentro da pasta do projeto.",
+                  "Abra o Codex.",
+                  "Clique em Abrir ou Open.",
+                  "Escolha a pasta do seu projeto.",
+                  "Clique em Open, Abrir ou Selecionar pasta.",
+                  "Pronto. Agora o Codex vai usar o Superagente dentro do seu projeto."
+                ]
+              },
+              {
+                title: "Como saber se esta certo no Windows",
+                description: "Assim que a pasta abrir no Codex, peca para o aluno fazer este teste simples.",
+                steps: [
+                  "Crie um chat novo.",
+                  "Envie a mensagem abaixo exatamente como esta.",
+                  "Se deu certo, ele vai responder como um agente mais inteligente, mais cuidadoso e mais autonomo."
+                ],
+                prompt: "Leia o arquivo AGENTS.md deste projeto e assuma esse comportamento como seu padrao. Primeiro, me explique em linguagem simples o que voce entendeu sobre sua forma de atuar.",
+                variant: "check"
+              }
+            ]
+          }
+        };
+
+        const createPremiumGuide = function() {
+          const guide = document.createElement("div");
+          guide.className = "premium-guide";
+
+          const intro = document.createElement("p");
+          intro.className = "premium-guide-intro";
+          guide.appendChild(intro);
+
+          const platformTabs = document.createElement("div");
+          platformTabs.className = "premium-platforms";
+          guide.appendChild(platformTabs);
+
+          const panels = document.createElement("div");
+          guide.appendChild(panels);
+
+          const renderPanel = function(key) {
+            const data = premiumContent[key];
+            intro.textContent = data.intro;
+
+            Array.from(platformTabs.children).forEach(function(button) {
+              button.classList.toggle("is-active", button.dataset.platform === key);
+            });
+
+            Array.from(panels.children).forEach(function(panel) {
+              panel.classList.toggle("is-active", panel.dataset.platform === key);
+            });
+          };
+
+          Object.keys(premiumContent).forEach(function(key, index) {
+            const data = premiumContent[key];
+
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "premium-platform" + (index === 0 ? " is-active" : "");
+            button.dataset.platform = key;
+            button.textContent = data.title;
+            button.addEventListener("click", function() {
+              renderPanel(key);
+            });
+            platformTabs.appendChild(button);
+
+            const panel = document.createElement("div");
+            panel.className = "premium-panel" + (index === 0 ? " is-active" : "");
+            panel.dataset.platform = key;
+
+            data.blocks.forEach(function(block) {
+              const card = document.createElement("div");
+              card.className = "premium-card" + (block.variant === "check" ? " premium-check" : "");
+
+              const title = document.createElement("h4");
+              title.textContent = block.title;
+              card.appendChild(title);
+
+              const description = document.createElement("p");
+              description.textContent = block.description;
+              card.appendChild(description);
+
+              const steps = document.createElement("ol");
+              steps.className = "premium-steps";
+
+              block.steps.forEach(function(step) {
+                const item = document.createElement("li");
+                item.textContent = step;
+                steps.appendChild(item);
+              });
+
+              card.appendChild(steps);
+
+              if (block.prompt) {
+                const prompt = document.createElement("code");
+                prompt.className = "premium-prompt";
+                prompt.textContent = block.prompt;
+                card.appendChild(prompt);
+              }
+
+              panel.appendChild(card);
+            });
+
+            const ruleCard = document.createElement("div");
+            ruleCard.className = "premium-card premium-check";
+            ruleCard.innerHTML = [
+              "<h4>A regra mais importante de todas</h4>",
+              "<p>Se o aluno esquecer tudo, ele so precisa lembrar disso: a pasta aberta no Codex precisa ter o arquivo AGENTS.md dentro dela.</p>"
+            ].join("");
+            panel.appendChild(ruleCard);
+
+            const errorCard = document.createElement("div");
+            errorCard.className = "premium-card premium-warning";
+            errorCard.innerHTML = [
+              "<h4>O erro mais comum</h4>",
+              "<p>O erro mais comum e este: o aluno coloca o AGENTS.md em uma pasta, mas abre outra pasta diferente no Codex. Se isso acontecer, o Superagente nao entra em acao.</p>"
+            ].join("");
+            panel.appendChild(errorCard);
+
+            panels.appendChild(panel);
+          });
+
+          return guide;
+        };
+
         const helper = function() {
           const paragraphs = Array.from(document.querySelectorAll("p"));
           const targets = paragraphs.filter(function(node) {
@@ -175,6 +482,17 @@
             ].join("");
             host.appendChild(wrapper);
           });
+
+          const premiumHeading = Array.from(document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, span, div")).find(function(node) {
+            return node.textContent && node.textContent.trim() === "Entregaveis Premium";
+          });
+
+          if (premiumHeading) {
+            const host = premiumHeading.closest("section") || premiumHeading.parentElement;
+            if (host && !host.querySelector(".premium-guide")) {
+              host.appendChild(createPremiumGuide());
+            }
+          }
         };
 
         const observer = new MutationObserver(helper);
