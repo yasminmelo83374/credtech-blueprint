@@ -52,6 +52,85 @@
   <meta name="twitter:title" content="Apostila_CredTech">
   <meta property="og:description" content="Implementação guiada em 6 semanas para operar com estrutura: multicanal, IA aplicada, validação de mailing e inteligência comercial. Grupo fechado com 15 vagas.">
   <meta name="twitter:description" content="Implementação guiada em 6 semanas para operar com estrutura: multicanal, IA aplicada, validação de mailing e inteligência comercial. Grupo fechado com 15 vagas.">
+  <style>
+    .week-switch-banner {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(214, 255, 63, 0.12);
+      background: rgba(8, 8, 8, 0.92);
+      backdrop-filter: blur(12px);
+      text-align: center;
+    }
+
+    .week-switch-copy {
+      font: 700 10px/1.2 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(214, 255, 63, 0.72);
+    }
+
+    .week-switch-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(214, 255, 63, 0.18);
+      background: rgba(214, 255, 63, 0.08);
+      color: #d6ff3f;
+      text-decoration: none;
+      font: 700 10px/1.2 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      transition: background 0.2s ease;
+    }
+
+    .week-switch-link:hover {
+      background: rgba(214, 255, 63, 0.14);
+    }
+
+    .challenge-response {
+      margin-top: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 16px;
+    }
+
+    .challenge-response-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: rgba(214, 255, 63, 0.72);
+      font: 700 10px/1.2 ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .challenge-response textarea {
+      width: 100%;
+      min-height: 140px;
+      resize: vertical;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(0, 0, 0, 0.28);
+      color: #f4f4f4;
+      padding: 14px 16px;
+      font: 400 14px/1.5 ui-sans-serif, system-ui, sans-serif;
+      outline: none;
+    }
+
+    .challenge-response textarea::placeholder {
+      color: rgba(235, 235, 235, 0.42);
+    }
+  </style>
   <script type="module" crossorigin src="/apostila/assets/index-BEPISsfz.js"></script>
   <link rel="stylesheet" crossorigin href="/apostila/assets/index-D9p_uYGl.css">
 </head>
@@ -68,6 +147,41 @@
         }
       }(window.location))
     </script>
+    <div class="week-switch-banner">
+      <span class="week-switch-copy">Quer revisar a base antes de continuar?</span>
+      <a class="week-switch-link" href="/apostila/semana-1/">Acessar Semana 1</a>
+    </div>
     <div id="root"></div>
+    <script>
+      (function() {
+        const helper = function() {
+          const paragraphs = Array.from(document.querySelectorAll("p"));
+          const targets = paragraphs.filter(function(node) {
+            return node.textContent && node.textContent.includes("Resposta aberta, com suas palavras.");
+          });
+
+          targets.forEach(function(node, index) {
+            const host = node.parentElement;
+            if (!host || host.querySelector(".challenge-response")) return;
+
+            const wrapper = document.createElement("div");
+            wrapper.className = "challenge-response";
+            wrapper.innerHTML = [
+              '<div class="challenge-response-header">',
+              '<span>Espaco de resposta</span>',
+              '<span>Ate 2 pontos</span>',
+              "</div>",
+              '<textarea placeholder="Escreva aqui sua resposta da pergunta ' + (index + 1) + '..."></textarea>'
+            ].join("");
+            host.appendChild(wrapper);
+          });
+        };
+
+        const observer = new MutationObserver(helper);
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+        helper();
+        window.addEventListener("load", helper);
+      })();
+    </script>
   </body>
 </html>
